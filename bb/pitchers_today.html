@@ -1,0 +1,778 @@
+<html>
+ <head>
+  <title>
+   2019 FanDuel Sortable Baseball Stats
+  </title>
+  <meta content="sports, baseball, strategy, smallworld, statistics, stragety, sprots, rotisserie, roto, investment, invest, game" name="keywords"/>
+ </head>
+ <body bgcolor="#FFFFFF" link="#0000ff" vlink="#800080">
+  <center>
+   <!--0-->
+  </center>
+  <!--------------  END ADVERTISING BANNER  ----------------------------->
+  <base href="http://rotoguru1.com/cgi-bin/"/>
+  <br/>
+  <center>
+   <script src="http://wlfanduel.adsrv.eacdn.com/S.ashx?btag=a_182b_1627c_&amp;affid=170&amp;siteid=182&amp;adid=1627&amp;c=" type="text/javascript">
+   </script>
+   <table border="0">
+    <tr>
+     <td align="center">
+      <a href="http://rotoguru2.com/">
+       <img alt="[Rotoguru logo]" border="0" height="66" src="http://rotoguru1.com/images/gfs2.gif" width="316"/>
+      </a>
+      <br/>
+      <img alt="[RotoGuru subtitle]" height="29" src="http://rotoguru1.com/images/gfssubtitle.gif" width="316"/>
+      <br/>
+      <font face="Times New Roman" size="5">
+       <b>
+        2019 FanDuel Sortable Baseball Stats
+       </b>
+      </font>
+     </td>
+     <!---
+<td align=right width=200>
+<a href="http://partners.fanduel.com/processing/clickthrgh.asp?btag=a_182b_42" target="_blank"><img src="http://partners.fanduel.com/processing/impressions.asp?btag=a_182b_42" alt="FanDuel - Daily Fantasy Baseball" border=0 width="125" height="125" ></a>
+</td>
+---->
+    </tr>
+   </table>
+  </center>
+  <center>
+   <font face="Times New Roman" size="3">
+    <b>
+     <font color="red">
+      Includes games played through Mar 21
+     </font>
+    </b>
+   </font>
+   <br/>
+   <font face="arial" size="2">
+    Table definitions appear at the bottom of this page.
+   </font>
+  </center>
+  <form action="http://rotoguru1.com/cgi-bin/stats.cgi" method="GET">
+   <table align="center" border="0" cellpadding="0" cellspacing="2">
+    <tr>
+     <td align="center" bgcolor="#FFCC99">
+      <font face="Arial" size="-1">
+       <b>
+        Position
+       </b>
+       <br/>
+       <select name="pos">
+        <option value="0">
+         All Players
+        </option>
+        <option selected="" value="1">
+         Pitchers
+        </option>
+        <option value="2">
+         Catchers
+        </option>
+        <option value="3">
+         1st Base
+        </option>
+        <option value="4">
+         2nd Base
+        </option>
+        <option value="5">
+         3rd Base
+        </option>
+        <option value="6">
+         Shortstop
+        </option>
+        <option value="7">
+         Outfield
+        </option>
+        <option value="8">
+         All Hitters
+         <!----
+ <option value=s>Opposing Starters---->
+        </option>
+       </select>
+      </font>
+     </td>
+     <td align="center" bgcolor="#FFCC99">
+      <font face="Arial" size="-1">
+       <b>
+        Sort Order
+       </b>
+       <br/>
+       <select name="sort">
+        <option value="4">
+         Total points
+        </option>
+        <option value="6">
+         Points/game
+        </option>
+        <option value="7">
+         Pts/game/$
+        </option>
+        <option selected="" value="3">
+         Price
+        </option>
+        <option value="8">
+         Price gain
+        </option>
+        <option value="0">
+         Price loss
+        </option>
+        <option value="5">
+         Column B
+        </option>
+        <option value="9">
+         Last game
+        </option>
+        <option value="2">
+         Team
+        </option>
+        <option value="1">
+         Name
+        </option>
+       </select>
+      </font>
+     </td>
+     <td align="center" bgcolor="#FFCC99">
+      <font face="Arial" size="-1">
+       <b>
+        Game
+       </b>
+       <br/>
+       <select name="game">
+        <!-----
+ <option value=s>FireLeague Elite
+ <option value=h>Fireleague Standard---->
+        <option selected="" value="d">
+         FanDuel
+        </option>
+        <option value="k">
+         DraftKings
+         <!----
+ <option value=f>DraftDay---->
+        </option>
+        <option value="y">
+         Yahoo
+         <!----- note Star Fantasy was r
+ <option value=j>FanThrowdown
+ <option value=t>StarStreet
+ <option value=x>Draft$treet FREEROLL 5/11----->
+        </option>
+       </select>
+      </font>
+     </td>
+     <td align="center" bgcolor="yellow" valign="middle">
+      <input type="submit" value=" GO "/>
+     </td>
+    </tr>
+    <tr>
+     <td align="center" bgcolor="#FFCC99">
+      <font face="Arial" size="-1">
+       <b>
+        Salary change
+       </b>
+       <br/>
+       <select name="colA">
+        <option selected="" value="0">
+         Latest day
+         <!----
+ <option value=2>Penultimate day
+ <option value=4>Last 2 days combined---->
+        </option>
+        <option value="5">
+         Last week
+        </option>
+        <option value="1">
+         Season to date
+         <!----
+ <option value=3>Weighted net trades ---->
+        </option>
+       </select>
+      </font>
+     </td>
+     <td align="center" bgcolor="#FFCC99">
+      <font face="Arial" size="-1">
+       <b>
+        Point period
+       </b>
+       <br/>
+       <select name="daypt">
+        <option selected="" value="0">
+         Year to date
+        </option>
+        <option value="1">
+         Last 30 days
+        </option>
+        <option value="2">
+         Last 15 days
+        </option>
+        <option value="3">
+         Last 7 days
+        </option>
+        <option value="6">
+         Last 3 days
+        </option>
+        <option value="7">
+         Last day
+        </option>
+       </select>
+      </font>
+     </td>
+     <td align="center" bgcolor="#FFCC99">
+      <font face="Arial" size="-1">
+       <b>
+        Use total points for:
+       </b>
+       <br/>
+       <select name="denom">
+        eligible games (EG)----&gt;
+        <option selected="" value="1">
+         all games played (GP)
+        </option>
+        <option value="3">
+         only games started (GS)
+        </option>
+       </select>
+      </font>
+     </td>
+     <td align="center" bgcolor="#FFCC99">
+      <font face="Arial" size="-1">
+       <b>
+        Col. B avg.
+       </b>
+       <br/>
+       <select name="xavg">
+        <option value="1">
+         Year to date
+        </option>
+        <option value="3">
+         Last 30 days
+        </option>
+        <option selected="" value="0">
+         Last 15 days
+        </option>
+        <option value="4">
+         Last 7 days
+        </option>
+        <option value="6">
+         Last 3 days
+        </option>
+        <option value="7">
+         Last day
+        </option>
+       </select>
+      </font>
+     </td>
+    </tr>
+    <tr>
+     <td align="center" bgcolor="#D3D3D3" colspan="2">
+      Inactive players:
+      <input checked="" name="inact" type="radio" value="0"/>
+      Exclude
+      <input name="inact" type="radio" value="1"/>
+      Include
+     </td>
+     <td align="center" bgcolor="#D3D3D3" colspan="2">
+      Exclude players priced above $
+      <input maxlength="5" name="maxprc" size="5" type="text" value="99999"/>
+     </td>
+    </tr>
+    <tr>
+     <td bgcolor="#ECD672" colspan="2">
+      Schedule filters:
+      <select name="sched">
+       <option value="0">
+        show all teams
+       </option>
+       <option value="1">
+        show only Mar 27 teams
+       </option>
+       <option selected="" value="2">
+        show only Mar 28 teams
+       </option>
+       <option value="3">
+        show only Mar 29 teams
+       </option>
+       <option value="4">
+        show only Mar 30 teams
+       </option>
+       <option value="5">
+        show only Mar 31 teams
+       </option>
+       <option value="6">
+        show only Apr 1 teams
+       </option>
+       <option value="7">
+        show only Apr 2 teams
+       </option>
+      </select>
+     </td>
+     <td bgcolor="#ECD672" colspan="2">
+      Show only probable starting pitchers?
+      <input checked="" name="starters" type="radio" value="1"/>
+      yes
+      <input name="starters" type="radio" value="0"/>
+      no
+      <br/>
+      <a title="Includes only historical data for games started in which the starting pitcher threw from the same hand as the listed starter for the selected game day">
+       Include only data vs same-handed starters?
+      </a>
+      <input name="hithand" type="radio" value="1"/>
+      yes
+      <input checked="" name="hithand" type="radio" value="0"/>
+      no
+     </td>
+    </tr>
+    <tr>
+     <td align="center" bgcolor="#D3D3D3" colspan="4">
+      <input name="numlist" type="radio" value="x"/>
+      Show top 50
+      <input checked="" name="numlist" type="radio" value="y"/>
+      Show top 100
+      <input name="numlist" type="radio" value="z"/>
+      Show all
+      <input name="numlist" type="radio" value="c"/>
+      <a title="semi-colon separated value export">
+       SCSV export
+      </a>
+     </td>
+    </tr>
+   </table>
+  </form>
+  <center>
+   <script language="JavaScript">
+    <!---
+ function resize(j) 
+ {
+ expires=new Date(2090,2,1);
+ document.cookie='sartfont='+j+'; expires=' + expires.toGMTString();
+ alert('A cookie has been placed on your computer to remember this selection. Font size changes will impact all future reports.');
+ }
+ //--->
+   </script>
+   <form name="fontsize">
+    <font face="arial" size="-1">
+     Font size:
+     <input name="size" onclick="javascript:resize(1)" type="radio" value="1"/>
+     smallest
+     <input name="size" onclick="javascript:resize(2)" type="radio" value="2"/>
+     smaller
+     <input checked="" name="size" onclick="javascript:resize(3)" type="radio" value="3"/>
+     medium
+     <input name="size" onclick="javascript:resize(4)" type="radio" value="4"/>
+     larger
+     <input name="size" onclick="javascript:resize(5)" type="radio" value="5"/>
+     largest
+    </font>
+   </form>
+  </center>
+  <center>
+   <table border="1">
+    <tr>
+     <td>
+      <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+      </script>
+      <!-- RotoGuru 728x90 -->
+      <ins class="adsbygoogle" data-ad-client="ca-pub-8583726409420479" data-ad-slot="6250624458" style="display:inline-block;width:728px;height:90px">
+      </ins>
+      <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+     </td>
+    </tr>
+   </table>
+  </center>
+  <font face="courier new,courier" size="+0">
+   <pre>                                                 [col A]                           [col B]<br/>                                         <a href="stats.cgi?13d0010021099999y">Mar 28</a>    <a href="stats.cgi?18d0010021099999y">Last</a>  |---- Year-To-Date -----|<br/>                                         <a href="stats.cgi?13d0010021099999y">Salary</a>  <a href="stats.cgi?18d0010021099999y">Salary</a>  <a href="stats.cgi?14d0010021099999y">Total</a>           <a href="stats.cgi?16d0010021099999y">FDP</a> <a href="stats.cgi?17d0010021099999y"> FDP/</a> <a href="stats.cgi?15d0010021099999y">15 day</a> <a href="stats.cgi?19d0010021099999y">Last</a> <u>Days</u><br/>     <u>Pos</u> <a href="stats.cgi?11d0010021099999y">Name</a>                      <a href="stats.cgi?12d0010021099999y">Team</a>  <a href="stats.cgi?13d0010021099999y">  ($) </a>  <a href="stats.cgi?18d0010021099999y">Change</a>   <a href="stats.cgi?14d0010021099999y">FDP</a>  <u>GS</u>   <u>GP</u>   <a href="stats.cgi?16d0010021099999y">/GP</a> <a href="stats.cgi?17d0010021099999y">GP/$k</a> <a href="stats.cgi?15d0010021099999y">FDP/GP</a> <a href="stats.cgi?19d0010021099999y">game</a> <u>Ago</u>
+ 1    SP <a href="player.cgi?1310" title="Thu, Mar 28 : throws R vs. nym - 1:05 PM EDT - Nationals Park ">Scherzer, Max</a>          <a href="http://www.rotoworld.com/player/mlb/4150  " target="_blank">R</a> <a href="rn.cgi?9278  " target="_blank">W</a> Was<font color="#000000">  11,700</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+ 2    SP <a href="player.cgi?121n" title="Thu, Mar 28 : throws R at wsh - 1:05 PM EDT - Nationals Park ">deGrom, Jacob</a>          <a href="http://www.rotoworld.com/content/playersearch.aspx?searchname=deGrom, Jacob&amp;sport=MLB" target="_blank" title="Thu, Mar 28 : throws R at wsh - 1:05 PM EDT - Nationals Park ">R</a> <a href="rn.cgi?12854 " target="_blank">W</a> NYM<font color="#000000">  11,500</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+ 3    SP <a href="player.cgi?1524" title="Thu, Mar 28 : throws R at tb - 4:00 PM EDT - Tropicana Field ">Verlander, Justin</a>      <a href="http://www.rotoworld.com/player/mlb/464   " target="_blank">R</a> <a href="rn.cgi?8309  " target="_blank">W</a> Hou<font color="#000000">  11,400</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+ 4    SP <a href="player.cgi?131p" title="Thu, Mar 28 : throws L vs. hou - 4:00 PM EDT - Tropicana Field ">Snell, Blake</a>           <a href="http://www.rotoworld.com/content/playersearch.aspx?searchname=Snell, Blake&amp;sport=MLB" target="_blank" title="Thu, Mar 28 : throws L vs. hou - 4:00 PM EDT - Tropicana Field ">R</a> <a href="rn.cgi?12189 " target="_blank">W</a> Tam<font color="#000000">  10,600</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+ 5    SP <a href="player.cgi?130m" title="Thu, Mar 28 : throws R vs. atl - 3:05 PM EDT - Citizens Bank Park ">Nola, Aaron</a>            <a href="http://www.rotoworld.com/content/playersearch.aspx?searchname=Nola, Aaron&amp;sport=MLB" target="_blank" title="Thu, Mar 28 : throws R vs. atl - 3:05 PM EDT - Citizens Bank Park ">R</a> <a href="rn.cgi?13359 " target="_blank">W</a> Phi<font color="#000000">  10,400</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+ 6    SP <a href="player.cgi?108v" title="Thu, Mar 28 : throws R at min - 4:10 PM EDT - Target Field ">Kluber, Corey</a>          <a href="http://www.rotoworld.com/player/mlb/6430  " target="_blank">R</a> <a href="rn.cgi?9875  " target="_blank">W</a> Cle<font color="#000000">  10,300</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+ 7    SP <a href="player.cgi?1580" title="Thu, Mar 28 : throws R at lad - 4:00 PM EDT - Dodger Stadium ">Greinke, Zack</a>          <a href="http://www.rotoworld.com/player/mlb/3796  " target="_blank">R</a> <a href="rn.cgi?7480  " target="_blank">W</a> Ari<font color="#000000">   9,400</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+ 8    SP <a href="player.cgi?121w" title="Thu, Mar 28 : throws R vs. bal - 1:00 PM EDT - Yankee Stadium ">Tanaka, Masahiro</a>       <a href="http://www.rotoworld.com/content/playersearch.aspx?searchname=Tanaka, Masahiro&amp;sport=MLB" target="_blank" title="Thu, Mar 28 : throws R vs. bal - 1:00 PM EDT - Yankee Stadium ">R</a> <a href="rn.cgi?10879 " target="_blank">W</a> NYY<font color="#000000">   9,400</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+ 9    SP <a href="player.cgi?134v" title="Thu, Mar 28 : throws R at cin - 4:10 PM EDT - Great American Ball Park ">Taillon, Jameson</a>       <a href="http://www.rotoworld.com/content/playersearch.aspx?searchname=Taillon, Jameson&amp;sport=MLB" target="_blank" title="Thu, Mar 28 : throws R at cin - 4:10 PM EDT - Great American Ball Park ">R</a> <a href="rn.cgi?11435 " target="_blank">W</a> Pit<font color="#000000">   9,400</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+10    SP <a href="player.cgi?1921" title="Thu, Mar 28 : throws L at sd - 4:10 PM EDT - Petco Park ">Bumgarner, Madison</a>     <a href="http://www.rotoworld.com/player/mlb/5044  " target="_blank">R</a> <a href="rn.cgi?9766  " target="_blank">W</a> Sfo<font color="#000000">   9,300</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+11    SP <a href="player.cgi?140b" title="Thu, Mar 28 : throws L at mia - 4:10 PM EDT - Marlins Park ">Freeland, Kyle</a>         <a href="http://www.rotoworld.com/content/playersearch.aspx?searchname=Freeland, Kyle&amp;sport=MLB" target="_blank" title="Thu, Mar 28 : throws L at mia - 4:10 PM EDT - Marlins Park ">R</a> <a href="rn.cgi?13369 " target="_blank">W</a> Col<font color="#000000">   9,200</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+12    SP <a href="player.cgi?111s" title="Thu, Mar 28 : throws R at mil - 2:10 PM EDT - Miller Park ">Mikolas, Miles</a>         <a href="http://www.rotoworld.com/content/playersearch.aspx?searchname=Mikolas, Miles&amp;sport=MLB" target="_blank" title="Thu, Mar 28 : throws R at mil - 2:10 PM EDT - Miller Park ">R</a> <a href="rn.cgi?11177 " target="_blank">W</a> StL<font color="#000000">   9,100</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+13    SP <a href="player.cgi?136p" title="Thu, Mar 28 : throws R vs. cle - 4:10 PM EDT - Target Field ">Berrios, Jose</a>          <a href="http://www.rotoworld.com/content/playersearch.aspx?searchname=Berrios, Jose&amp;sport=MLB" target="_blank" title="Thu, Mar 28 : throws R vs. cle - 4:10 PM EDT - Target Field ">R</a> <a href="rn.cgi?12492 " target="_blank">W</a> Min<font color="#000000">   8,900</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+14    SP <a href="player.cgi?114v" title="Thu, Mar 28 : throws L vs. ari - 4:00 PM EDT - Dodger Stadium ">Ryu, Hyun-Jin</a>          <a href="http://www.rotoworld.com/content/playersearch.aspx?searchname=Ryu, Hyun-Jin&amp;sport=MLB" target="_blank" title="Thu, Mar 28 : throws L vs. ari - 4:00 PM EDT - Dodger Stadium ">R</a> <a href="rn.cgi?10895 " target="_blank">W</a> Los<font color="#000000">   8,500</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+15    SP <a href="player.cgi?1506" title="Thu, Mar 28 : throws L at tex - 4:05 PM EDT - Globe Life Park ">Lester, Jon</a>            <a href="http://www.rotoworld.com/player/mlb/1061  " target="_blank">R</a> <a href="rn.cgi?7545  " target="_blank">W</a> ChC<font color="#000000">   7,700</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+16    SP <a href="player.cgi?1856" title="Thu, Mar 28 : throws R vs. stl - 2:10 PM EDT - Miller Park ">Chacin, Jhoulys</a>        <a href="http://www.rotoworld.com/player/mlb/5445  " target="_blank">R</a> <a href="rn.cgi?10341 " target="_blank">W</a> Mil<font color="#000000">   7,600</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+17    SP <a href="player.cgi?106h" title="Thu, Mar 28 : throws R at phi - 3:05 PM EDT - Citizens Bank Park ">Teheran, Julio</a>         <a href="http://www.rotoworld.com/player/mlb/5369  " target="_blank">R</a> <a href="rn.cgi?10042 " target="_blank">W</a> Atl<font color="#000000">   7,600</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+18    SP <a href="player.cgi?142m" title="Thu, Mar 28 : throws R vs. pit - 4:10 PM EDT - Great American Ball Park ">Castillo, Luis</a>         <a href="http://www.rotoworld.com/content/playersearch.aspx?searchname=Castillo, Luis&amp;sport=MLB" target="_blank" title="Thu, Mar 28 : throws R vs. pit - 4:10 PM EDT - Great American Ball Park ">R</a> <a href="rn.cgi?14495 " target="_blank">W</a> Cin<font color="#000000">   7,600</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+19    SP <a href="player.cgi?1120" title="Thu, Mar 28 : throws R at oak - 4:07 PM EDT - Oakland Coliseum ">Cahill, Trevor</a>         <a href="http://www.rotoworld.com/player/mlb/4763  " target="_blank">R</a> <a href="rn.cgi?9355  " target="_blank">W</a> Ana<font color="#000000">   7,500</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+20    SP <a href="player.cgi?109s" title="Thu, Mar 28 : throws R vs. laa - 4:07 PM EDT - Oakland Coliseum ">Fiers, Michael</a>         <a href="http://www.rotoworld.com/player/mlb/6262  " target="_blank">R</a> <a href="rn.cgi?11191 " target="_blank">W</a> Oak<font color="#000000">   7,500</font>       0     3   1    1   3.0   0.4   3.0   3.0   2
+21    SP <a href="player.cgi?127s" title="Thu, Mar 28 : throws L at kc - 4:15 PM EDT - Kauffman Stadium ">Rodon, Carlos</a>          <a href="http://www.rotoworld.com/content/playersearch.aspx?searchname=Rodon, Carlos&amp;sport=MLB" target="_blank" title="Thu, Mar 28 : throws L at kc - 4:15 PM EDT - Kauffman Stadium ">R</a> <a href="rn.cgi?13347 " target="_blank">W</a> ChW<font color="#000000">   7,500</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+22    SP <a href="player.cgi?103t" title="Thu, Mar 28 : throws L vs. chc - 4:05 PM EDT - Globe Life Park ">Minor, Mike</a>            <a href="http://www.rotoworld.com/player/mlb/5925  " target="_blank">R</a> <a href="rn.cgi?10954 " target="_blank">W</a> Tex<font color="#000000">   7,200</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+23    SP <a href="player.cgi?146t" title="Thu, Mar 28 : throws L vs. sf - 4:10 PM EDT - Petco Park ">Lauer, Eric</a>            <a href="http://www.rotoworld.com/content/playersearch.aspx?searchname=Lauer, Eric&amp;sport=MLB" target="_blank" title="Thu, Mar 28 : throws L vs. sf - 4:10 PM EDT - Petco Park ">R</a> <a href="rn.cgi?14263 " target="_blank">W</a> Sdg<font color="#000000">   7,200</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+24    SP <a href="player.cgi?1931" title="Thu, Mar 28 : throws R at tor - 3:37 PM EDT - Rogers Centre ">Zimmermann, Jordan</a>     <a href="http://www.rotoworld.com/player/mlb/2794  " target="_blank">R</a> <a href="rn.cgi?9793  " target="_blank">W</a> Det<font color="#000000">   7,100</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+25    SP <a href="player.cgi?120t" title="Thu, Mar 28 : throws R vs. col - 4:10 PM EDT - Marlins Park ">Urena, Jose</a>            <a href="http://www.rotoworld.com/content/playersearch.aspx?searchname=Urena, Jose&amp;sport=MLB" target="_blank" title="Thu, Mar 28 : throws R vs. col - 4:10 PM EDT - Marlins Park ">R</a> <a href="rn.cgi?13194 " target="_blank">W</a> Fla<font color="#000000">   6,900</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+<center>
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- RotoGuru 728x90 -->
+<ins class="adsbygoogle" data-ad-client="ca-pub-8583726409420479" data-ad-slot="6250624458" style="display:inline-block;width:728px;height:90px"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>                                         <a href="stats.cgi?13d0010021099999y">Mar 28</a>    <a href="stats.cgi?18d0010021099999y">Last</a>  |---- Year-To-Date -----|<br/>                                         <a href="stats.cgi?13d0010021099999y">Salary</a>  <a href="stats.cgi?18d0010021099999y">Salary</a>  <a href="stats.cgi?14d0010021099999y">Total</a>           <a href="stats.cgi?16d0010021099999y">FDP</a> <a href="stats.cgi?17d0010021099999y"> FDP/</a> <a href="stats.cgi?15d0010021099999y">15 day</a> <a href="stats.cgi?19d0010021099999y">Last</a> <u>Days</u><br/>     <u>Pos</u> <a href="stats.cgi?11d0010021099999y">Name</a>                      <a href="stats.cgi?12d0010021099999y">Team</a>  <a href="stats.cgi?13d0010021099999y">  ($) </a>  <a href="stats.cgi?18d0010021099999y">Change</a>   <a href="stats.cgi?14d0010021099999y">FDP</a>  <u>GS</u>   <u>GP</u>   <a href="stats.cgi?16d0010021099999y">/GP</a> <a href="stats.cgi?17d0010021099999y">GP/$k</a> <a href="stats.cgi?15d0010021099999y">FDP/GP</a> <a href="stats.cgi?19d0010021099999y">game</a> <u>Ago</u>
+26    SP <a href="player.cgi?123u" title="Thu, Mar 28 : throws R vs. det - 3:37 PM EDT - Rogers Centre ">Stroman, Marcus</a>        <a href="http://www.rotoworld.com/content/playersearch.aspx?searchname=Stroman, Marcus&amp;sport=MLB" target="_blank" title="Thu, Mar 28 : throws R vs. det - 3:37 PM EDT - Rogers Centre ">R</a> <a href="rn.cgi?12456 " target="_blank">W</a> Tor<font color="#000000">   6,900</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+27    SP <a href="player.cgi?145w" title="Thu, Mar 28 : throws R vs. chw - 4:15 PM EDT - Kauffman Stadium ">Keller, Brad</a>           <a href="http://www.rotoworld.com/content/playersearch.aspx?searchname=Keller, Brad&amp;sport=MLB" target="_blank" title="Thu, Mar 28 : throws R vs. chw - 4:15 PM EDT - Kauffman Stadium ">R</a> <a href="rn.cgi?14516 " target="_blank">W</a> Kan<font color="#000000">   6,200</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+28    SP <a href="player.cgi?100y" title="Thu, Mar 28 : throws R at nyy - 1:00 PM EDT - Yankee Stadium ">Cashner, Andrew</a>        <a href="http://www.rotoworld.com/player/mlb/5577  " target="_blank">R</a> <a href="rn.cgi?10468 " target="_blank">W</a> Bal<font color="#000000">   6,000</font>       0     0   0    0   0.0   0.0   0.0   0.0   0
+<hr/></pre>
+  </font>
+  <form action="http://rotoguru1.com/cgi-bin/stats.cgi" method="GET">
+   <table align="center" border="0" cellpadding="0" cellspacing="2">
+    <tr>
+     <td align="center" bgcolor="#FFCC99">
+      <font face="Arial" size="-1">
+       <b>
+        Position
+       </b>
+       <br/>
+       <select name="pos">
+        <option value="0">
+         All Players
+        </option>
+        <option selected="" value="1">
+         Pitchers
+        </option>
+        <option value="2">
+         Catchers
+        </option>
+        <option value="3">
+         1st Base
+        </option>
+        <option value="4">
+         2nd Base
+        </option>
+        <option value="5">
+         3rd Base
+        </option>
+        <option value="6">
+         Shortstop
+        </option>
+        <option value="7">
+         Outfield
+        </option>
+        <option value="8">
+         All Hitters
+         <!----
+ <option value=s>Opposing Starters---->
+        </option>
+       </select>
+      </font>
+     </td>
+     <td align="center" bgcolor="#FFCC99">
+      <font face="Arial" size="-1">
+       <b>
+        Sort Order
+       </b>
+       <br/>
+       <select name="sort">
+        <option value="4">
+         Total points
+        </option>
+        <option value="6">
+         Points/game
+        </option>
+        <option value="7">
+         Pts/game/$
+        </option>
+        <option selected="" value="3">
+         Price
+        </option>
+        <option value="8">
+         Price gain
+        </option>
+        <option value="0">
+         Price loss
+        </option>
+        <option value="5">
+         Column B
+        </option>
+        <option value="9">
+         Last game
+        </option>
+        <option value="2">
+         Team
+        </option>
+        <option value="1">
+         Name
+        </option>
+       </select>
+      </font>
+     </td>
+     <td align="center" bgcolor="#FFCC99">
+      <font face="Arial" size="-1">
+       <b>
+        Game
+       </b>
+       <br/>
+       <select name="game">
+        <!-----
+ <option value=s>FireLeague Elite
+ <option value=h>Fireleague Standard---->
+        <option selected="" value="d">
+         FanDuel
+        </option>
+        <option value="k">
+         DraftKings
+         <!----
+ <option value=f>DraftDay---->
+        </option>
+        <option value="y">
+         Yahoo
+         <!----- note Star Fantasy was r
+ <option value=j>FanThrowdown
+ <option value=t>StarStreet
+ <option value=x>Draft$treet FREEROLL 5/11----->
+        </option>
+       </select>
+      </font>
+     </td>
+     <td align="center" bgcolor="yellow" valign="middle">
+      <input type="submit" value=" GO "/>
+     </td>
+    </tr>
+    <tr>
+     <td align="center" bgcolor="#FFCC99">
+      <font face="Arial" size="-1">
+       <b>
+        Salary change
+       </b>
+       <br/>
+       <select name="colA">
+        <option selected="" value="0">
+         Latest day
+         <!----
+ <option value=2>Penultimate day
+ <option value=4>Last 2 days combined---->
+        </option>
+        <option value="5">
+         Last week
+        </option>
+        <option value="1">
+         Season to date
+         <!----
+ <option value=3>Weighted net trades ---->
+        </option>
+       </select>
+      </font>
+     </td>
+     <td align="center" bgcolor="#FFCC99">
+      <font face="Arial" size="-1">
+       <b>
+        Point period
+       </b>
+       <br/>
+       <select name="daypt">
+        <option selected="" value="0">
+         Year to date
+        </option>
+        <option value="1">
+         Last 30 days
+        </option>
+        <option value="2">
+         Last 15 days
+        </option>
+        <option value="3">
+         Last 7 days
+        </option>
+        <option value="6">
+         Last 3 days
+        </option>
+        <option value="7">
+         Last day
+        </option>
+       </select>
+      </font>
+     </td>
+     <td align="center" bgcolor="#FFCC99">
+      <font face="Arial" size="-1">
+       <b>
+        Use total points for:
+       </b>
+       <br/>
+       <select name="denom">
+        eligible games (EG)----&gt;
+        <option selected="" value="1">
+         all games played (GP)
+        </option>
+        <option value="3">
+         only games started (GS)
+        </option>
+       </select>
+      </font>
+     </td>
+     <td align="center" bgcolor="#FFCC99">
+      <font face="Arial" size="-1">
+       <b>
+        Col. B avg.
+       </b>
+       <br/>
+       <select name="xavg">
+        <option value="1">
+         Year to date
+        </option>
+        <option value="3">
+         Last 30 days
+        </option>
+        <option selected="" value="0">
+         Last 15 days
+        </option>
+        <option value="4">
+         Last 7 days
+        </option>
+        <option value="6">
+         Last 3 days
+        </option>
+        <option value="7">
+         Last day
+        </option>
+       </select>
+      </font>
+     </td>
+    </tr>
+    <tr>
+     <td align="center" bgcolor="#D3D3D3" colspan="2">
+      Inactive players:
+      <input checked="" name="inact" type="radio" value="0"/>
+      Exclude
+      <input name="inact" type="radio" value="1"/>
+      Include
+     </td>
+     <td align="center" bgcolor="#D3D3D3" colspan="2">
+      Exclude players priced above $
+      <input maxlength="5" name="maxprc" size="5" type="text" value="99999"/>
+     </td>
+    </tr>
+    <tr>
+     <td bgcolor="#ECD672" colspan="2">
+      Schedule filters:
+      <select name="sched">
+       <option value="0">
+        show all teams
+       </option>
+       <option value="1">
+        show only Mar 27 teams
+       </option>
+       <option selected="" value="2">
+        show only Mar 28 teams
+       </option>
+       <option value="3">
+        show only Mar 29 teams
+       </option>
+       <option value="4">
+        show only Mar 30 teams
+       </option>
+       <option value="5">
+        show only Mar 31 teams
+       </option>
+       <option value="6">
+        show only Apr 1 teams
+       </option>
+       <option value="7">
+        show only Apr 2 teams
+       </option>
+      </select>
+     </td>
+     <td bgcolor="#ECD672" colspan="2">
+      Show only probable starting pitchers?
+      <input checked="" name="starters" type="radio" value="1"/>
+      yes
+      <input name="starters" type="radio" value="0"/>
+      no
+      <br/>
+      <a title="Includes only historical data for games started in which the starting pitcher threw from the same hand as the listed starter for the selected game day">
+       Include only data vs same-handed starters?
+      </a>
+      <input name="hithand" type="radio" value="1"/>
+      yes
+      <input checked="" name="hithand" type="radio" value="0"/>
+      no
+     </td>
+    </tr>
+    <tr>
+     <td align="center" bgcolor="#D3D3D3" colspan="4">
+      <input name="numlist" type="radio" value="x"/>
+      Show top 50
+      <input checked="" name="numlist" type="radio" value="y"/>
+      Show top 100
+      <input name="numlist" type="radio" value="z"/>
+      Show all
+      <input name="numlist" type="radio" value="c"/>
+      <a title="semi-colon separated value export">
+       SCSV export
+      </a>
+     </td>
+    </tr>
+   </table>
+  </form>
+  <p>
+  </p>
+  <center>
+   <a href="http://rotoguru2.com">
+    Return to RotoGuru Menu
+   </a>
+  </center>
+  <hr/>
+  <font size="+0">
+  </font>
+  <center>
+   <b>
+    Definitions
+   </b>
+  </center>
+  <p>
+   <font face="Times New Roman" size="-1">
+    Each player's name is linked to his individual stats page, which includes a table of day-by-day points.
+   </font>
+  </p>
+  <p>
+   The linked "R" and "W" after a player's name are links to his RotoWorld and RotoWire pages, respectively.
+  </p>
+  <p>
+   Players who are currently on an active 25-man roster (minors, D/L, etc.) are denoted by an "x" after their games started.  Inactive players with zero points YTD are not listed. Inactive status is determined based on current listings at MLB.com, updated hourly.
+  </p>
+  <p>
+  </p>
+  <li>
+   GS stands for "games started"
+  </li>
+  <li>
+   GP stands for "games played".
+  </li>
+  <li>
+   "Last game" points are for the last game played for each player. If the report is for games started only, then this will be the points for the last game started.
+  </li>
+  <li>
+   "Days ago" indicates how many days ago the game was played.  ("1" means yesterday.)
+  </li>
+  <li>
+   Column B reflects the point average per GS or GP (depending on the specified choice) during the period selected.
+  </li>
+  <p>
+   A
+   <font color="#FF0000">
+    red price
+   </font>
+   indicates a low price for the year, while a
+   <font color="#008000">
+    green price
+   </font>
+   denotes a high price for the year.
+  </p>
+  <hr/>
+  <font face="Times New Roman" size="2">
+   <p>
+    This report is based upon data which the Guru believes to be reliable, but for which no assurances of accuracy can be made. Users who discover suspected errors are requested to report them to the Guru via
+    <a href="mailto:Guru&lt;davehall@rotoguru2.com&gt;?subject=Suspected Baseball Stats Error">
+     email
+    </a>
+    .
+   </p>
+  </font>
+ </body>
+</html>
