@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/msmith7/dc/d/joining_data_in_SQL/countries.sqlite" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1367"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="cities"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1">-- Select fields
+SELECT country_name 
+  -- From countries
+  FROM countries 
+	-- Set theory clause
+	INTERSECT
+-- Select fields
+SELECT name 
+  -- From cities
+  FROM cities;</sql><sql name="SQL 1">SELECT monarch, country
+FROM monarchs
+EXCEPT
+SELECT prime_minister, country
+FROM prime_ministers</sql><sql name="SQL 1">-- Select field
+SELECT name 
+  -- From cities
+  FROM cities
+	-- Set theory clause
+	EXCEPT
+-- Select field
+SELECT capital
+  -- From countries
+  FROM countries
+-- Order by result
+ORDER BY name;</sql><current_tab id="2"/></tab_sql></sqlb_project>
