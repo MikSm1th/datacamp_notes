@@ -2,9 +2,9 @@
 
 git add . 
 
-todaysDate='date +"%D"'
-git commit -m $todaysDate
+todaysDate=$(date +%D)
+git commit -m '$todaysDate'
 
 git push 
 
-echo "Committed"
+echo "Committed: $todaysDate"
