@@ -2,7 +2,7 @@
 
 git add . 
 
-todaysDate=$(date +%D)
+todaysDate=$(date +%F)
 git commit -m "$todaysDate"
 
 git push 
