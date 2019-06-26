@@ -3,7 +3,7 @@
 git add . 
 
 todaysDate='date +"%D"'
-git commit -m '$todaysDate'
+git commit -m 'todaysDate'
 
 git push 
 
