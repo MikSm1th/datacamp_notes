@@ -6,6 +6,6 @@ todaysDate=$(date +%F)
 
 git commit -m "$todaysDate"
 
-git push
+git push git@github.com:MikSm1th/datacamp_notes.git
 
 echo "Committed: $todaysDate" 
