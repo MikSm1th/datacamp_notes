@@ -1,10 +1,11 @@
 #!/bin/bash
 
-git add . 
+git add .
 
 todaysDate=$(date +%F)
+
 git commit -m "$todaysDate"
 
-git push 
+git push
 
-echo "Committed: $todaysDate"
+echo "Committed: $todaysDate" 
