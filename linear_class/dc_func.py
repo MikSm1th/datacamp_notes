@@ -89,3 +89,15 @@ def plot_classifier(X, y, clf, ax=None, ticks=False, proba=False, lims=None):
     else:
         return ax
 
+def show_digit(i, lr=None):
+    plt.imshow(np.reshape(X[i], (8,8)), cmap='gray', vmin=0, vmax=16, 
+              interpolation=None)
+    plt.xticks(())
+    plt.yticks(())
+    if lr is None:
+        plt.title('class label = %d' % y[i])
+    else:
+        pred = lr.predict(X[i][None])
+        pred_proba = lr.predict_proba(X[i][None])[0,pred]
+        plt.title('label=%d, prediction=%d, proba=%.2f' % (y[i], pred, pred_proba))
+    plt.show()
