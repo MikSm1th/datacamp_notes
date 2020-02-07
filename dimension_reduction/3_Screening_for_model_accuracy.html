@@ -13375,7 +13375,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_selection</span> <span class="kn">import</span> <span class="n">RFE</span>
@@ -13388,10 +13388,36 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[12]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>RFE(estimator=LogisticRegression(C=1.0, class_weight=None, dual=False,
+                                 fit_intercept=True, intercept_scaling=1,
+                                 l1_ratio=None, max_iter=100,
+                                 multi_class=&#39;auto&#39;, n_jobs=None, penalty=&#39;l2&#39;,
+                                 random_state=None, solver=&#39;lbfgs&#39;, tol=0.0001,
+                                 verbose=0, warm_start=False),
+    n_features_to_select=5, step=1, verbose=0)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">rfe</span><span class="o">.</span><span class="n">support_</span><span class="p">]</span>
@@ -13401,10 +13427,32 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[13]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Index([&#39;chestheight&#39;, &#39;hipbreadthsitting&#39;, &#39;neckcircumference&#39;,
+       &#39;shouldercircumference&#39;, &#39;tenthribheight&#39;],
+      dtype=&#39;object&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#print(dict(zip(X.columns, rfe.ranking_)))</span>
@@ -13417,7 +13465,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">rfe</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_std</span><span class="p">)))</span>
@@ -13427,10 +13475,28 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0.9961559582646897
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">load_pima</span><span class="p">(</span><span class="n">cols_to_drop</span><span class="p">):</span>
@@ -13454,7 +13520,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Fit the scaler on the training features and transform these in one go</span>
@@ -13478,10 +13544,29 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>80.5% accuracy on test set.
+{&#39;pregnant&#39;: 0.19, &#39;glucose&#39;: 1.16, &#39;diastolic&#39;: 0.01, &#39;triceps&#39;: 0.22, &#39;insulin&#39;: 0.02, &#39;bmi&#39;: 0.35, &#39;family&#39;: 0.27, &#39;age&#39;: 0.32}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">load_pima</span><span class="p">(</span><span class="s1">&#39;test&#39;</span><span class="p">)</span>
@@ -13510,10 +13595,35 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Fitting estimator with 8 features.
+Fitting estimator with 7 features.
+Fitting estimator with 6 features.
+Fitting estimator with 5 features.
+Fitting estimator with 4 features.
+{&#39;pregnant&#39;: 1, &#39;glucose&#39;: 1, &#39;diastolic&#39;: 6, &#39;triceps&#39;: 4, &#39;insulin&#39;: 5, &#39;bmi&#39;: 1, &#39;family&#39;: 2, &#39;age&#39;: 3}
+Index([&#39;pregnant&#39;, &#39;glucose&#39;, &#39;bmi&#39;], dtype=&#39;object&#39;)
+78.8% accuracy on test set.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">load_ansur</span><span class="p">(</span><span class="n">non_numeric</span><span class="p">)</span>
@@ -13526,7 +13636,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
@@ -13541,10 +13651,37 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[20]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion=&#39;gini&#39;, max_depth=None, max_features=&#39;auto&#39;,
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=100,
+                       n_jobs=None, oob_score=False, random_state=None,
+                       verbose=0, warm_start=False)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">rf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)))</span>
@@ -13554,10 +13691,28 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0.9939593629873695
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">rf</span><span class="o">.</span><span class="n">feature_importances_</span><span class="p">)</span>
@@ -13567,10 +13722,43 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0.00179074 0.00079129 0.00052907 0.00101564 0.00065832 0.01523768
+ 0.00945195 0.10656436 0.00233514 0.00564928 0.01846816 0.0178164
+ 0.00074396 0.001262   0.00198662 0.01266691 0.00276108 0.00107177
+ 0.00229288 0.00211622 0.00168469 0.00823632 0.00096857 0.00125171
+ 0.00628841 0.02986965 0.00057302 0.00676735 0.00075349 0.0005869
+ 0.0006661  0.00269031 0.00057892 0.00263204 0.00588125 0.00638557
+ 0.00155701 0.03244827 0.01275878 0.00469146 0.00066384 0.03842954
+ 0.08269476 0.0007972  0.00095924 0.00079202 0.00060376 0.0230249
+ 0.00046779 0.01478935 0.0265575  0.00110122 0.00042628 0.00725292
+ 0.01110556 0.00151039 0.00074816 0.00145782 0.0089261  0.00560839
+ 0.00190348 0.12388895 0.07034707 0.00501056 0.00023498 0.00186682
+ 0.00260215 0.05696572 0.00085271 0.00081334 0.00792633 0.04392442
+ 0.0007511  0.00983071 0.00466147 0.00106775 0.00688334 0.00141432
+ 0.00073691 0.0007199  0.00063416 0.0010481  0.00126776 0.01045643
+ 0.00217782 0.00162421 0.00097847 0.00049184 0.0003917  0.06057304
+ 0.00040092 0.00207534 0.01201631 0.00306584]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mask</span> <span class="o">=</span> <span class="n">rf</span><span class="o">.</span><span class="n">feature_importances_</span> <span class="o">&gt;</span> <span class="mf">0.03</span>
@@ -13581,10 +13769,35 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[False False False False False False False  True False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False  True False False False  True  True False False False False False
+ False False False False False False False False False False False False
+ False  True  True False False False False  True False False False  True
+ False False False False False False False False False False False False
+ False False False False False  True False False False False]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_reduced</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">mask</span><span class="p">]</span>
@@ -13592,6 +13805,28 @@ div#notebook {
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Index([&#39;biacromialbreadth&#39;, &#39;forearmcircumferenceflexed&#39;, &#39;handbreadth&#39;,
+       &#39;handcircumference&#39;, &#39;neckcircumference&#39;, &#39;neckcircumferencebase&#39;,
+       &#39;shouldercircumference&#39;, &#39;sleevelengthspinewrist&#39;,
+       &#39;wristcircumference&#39;],
+      dtype=&#39;object&#39;)
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13605,7 +13840,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_selection</span> <span class="kn">import</span> <span class="n">RFE</span>
@@ -13621,10 +13856,60 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Fitting estimator with 94 features.
+Fitting estimator with 84 features.
+Fitting estimator with 74 features.
+Fitting estimator with 64 features.
+Fitting estimator with 54 features.
+Fitting estimator with 44 features.
+Fitting estimator with 34 features.
+Fitting estimator with 24 features.
+Fitting estimator with 14 features.
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[25]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>RFE(estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0,
+                                     class_weight=None, criterion=&#39;gini&#39;,
+                                     max_depth=None, max_features=&#39;auto&#39;,
+                                     max_leaf_nodes=None, max_samples=None,
+                                     min_impurity_decrease=0.0,
+                                     min_impurity_split=None,
+                                     min_samples_leaf=1, min_samples_split=2,
+                                     min_weight_fraction_leaf=0.0,
+                                     n_estimators=100, n_jobs=None,
+                                     oob_score=False, random_state=None,
+                                     verbose=0, warm_start=False),
+    n_features_to_select=6, step=10, verbose=1)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">rfe</span><span class="o">.</span><span class="n">support_</span><span class="p">])</span>
@@ -13634,10 +13919,30 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Index([&#39;biacromialbreadth&#39;, &#39;handcircumference&#39;, &#39;neckcircumference&#39;,
+       &#39;neckcircumferencebase&#39;, &#39;shouldercircumference&#39;, &#39;wristcircumference&#39;],
+      dtype=&#39;object&#39;)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">load_pima</span><span class="p">(</span><span class="s1">&#39;test&#39;</span><span class="p">)</span>
@@ -13650,7 +13955,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Fit the random forest model to the training data</span>
@@ -13671,10 +13976,29 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;pregnant&#39;: 0.09, &#39;glucose&#39;: 0.24, &#39;diastolic&#39;: 0.08, &#39;triceps&#39;: 0.09, &#39;insulin&#39;: 0.13, &#39;bmi&#39;: 0.13, &#39;family&#39;: 0.11, &#39;age&#39;: 0.13}
+76.3% accuracy on test set.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a mask for features importances above the threshold</span>
@@ -13688,10 +14012,28 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[False  True False False False False False False]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a mask for features importances above the threshold</span>
@@ -13708,10 +14050,28 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Index([&#39;glucose&#39;], dtype=&#39;object&#39;)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">load_pima</span><span class="p">(</span><span class="s1">&#39;test&#39;</span><span class="p">)</span>
@@ -13724,7 +14084,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Wrap the feature eliminator around the random forest model</span>
@@ -13745,16 +14105,189 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Fitting estimator with 8 features.
+Fitting estimator with 6 features.
+Fitting estimator with 4 features.
+Index([&#39;glucose&#39;, &#39;insulin&#39;], dtype=&#39;object&#39;)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">load_ansur</span><span class="p">(</span><span class="n">non_numeric</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">Lasso</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="s2">&quot;BMI&quot;</span><span class="p">]</span>
+<span class="n">X</span><span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;BMI&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="c1"># Fit the scaler on the training features and transform these in one go</span>
+<span class="n">X_train_std</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+
+<span class="c1"># Create the Lasso model</span>
+<span class="n">la</span> <span class="o">=</span> <span class="n">Lasso</span><span class="p">()</span>
+
+<span class="c1"># Fit it to the standardized training data</span>
+<span class="n">la</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_std</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[46]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Lasso(alpha=1.0, copy_X=True, fit_intercept=True, max_iter=1000,
+      normalize=False, positive=False, precompute=False, random_state=None,
+      selection=&#39;cyclic&#39;, tol=0.0001, warm_start=False)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Transform the test set with the pre-fitted scaler</span>
+<span class="n">X_test_std</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1"># Calculate the coefficient of determination (R squared) on X_test_std</span>
+<span class="n">r_squared</span> <span class="o">=</span> <span class="n">la</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test_std</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The model can predict </span><span class="si">{0:.1%}</span><span class="s2"> of the variance in the test set.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">r_squared</span><span class="p">))</span>
+
+<span class="c1"># Create a list that has True values when coefficients equal 0</span>
+<span class="n">zero_coef</span> <span class="o">=</span> <span class="n">la</span><span class="o">.</span><span class="n">coef_</span> <span class="o">==</span> <span class="mi">0</span>
+
+<span class="c1"># Calculate how many features have a zero coefficient</span>
+<span class="n">n_ignored</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">zero_coef</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The model has ignored </span><span class="si">{}</span><span class="s2"> out of </span><span class="si">{}</span><span class="s2"> features.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n_ignored</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">la</span><span class="o">.</span><span class="n">coef_</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The model can predict 82.8% of the variance in the test set.
+The model has ignored 83 out of 93 features.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">alphas</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">alphas</span><span class="p">:</span>
+    <span class="c1"># Find the highest alpha value with R-squared above 98%</span>
+    <span class="n">la</span> <span class="o">=</span> <span class="n">Lasso</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="n">a</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="c1"># Fits the model and calculates performance stats</span>
+    <span class="n">la</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_std</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+    <span class="n">r_squared</span> <span class="o">=</span> <span class="n">la</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test_std</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+    <span class="n">n_ignored_features</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">la</span><span class="o">.</span><span class="n">coef_</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+
+    <span class="c1"># Print peformance stats </span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The model can predict </span><span class="si">{0:.1%}</span><span class="s2"> of the variance in the test set.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">r_squared</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> out of </span><span class="si">{}</span><span class="s2"> features were ignored.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n_ignored_features</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">la</span><span class="o">.</span><span class="n">coef_</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The model can predict 82.8% of the variance in the test set.
+83 out of 93 features were ignored.
+The model can predict 90.7% of the variance in the test set.
+82 out of 93 features were ignored.
+The model can predict 98.4% of the variance in the test set.
+69 out of 93 features were ignored.
+The model can predict 99.1% of the variance in the test set.
+53 out of 93 features were ignored.
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13774,7 +14307,7 @@ div#notebook {
 </div>X, y, X_train, X_test, y_train, y_test = load_pima('test')
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert --to html 3_Screening_for_model_accuracy.ipynb
@@ -13784,10 +14317,29 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[NbConvertApp] Converting notebook 3_Screening_for_model_accuracy.ipynb to html
+[NbConvertApp] Writing 314759 bytes to 3_Screening_for_model_accuracy.html
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>../gitbsh &gt; /dev/null <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
