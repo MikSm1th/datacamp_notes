@@ -13183,7 +13183,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sales_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/grocery_sales.csv&#39;</span><span class="p">)</span>
@@ -13200,7 +13200,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -13264,7 +13264,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate the price from the quantity sold and revenue</span>
@@ -13306,7 +13306,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">load_ansur</span><span class="p">(</span><span class="n">non_numeric</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">)</span>
@@ -13320,123 +13320,6 @@ div#notebook {
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-Int64Index: 6068 entries, 0 to 1985
-Data columns (total 95 columns):
-abdominalextensiondepthsitting    6068 non-null int64
-acromialheight                    6068 non-null int64
-acromionradialelength             6068 non-null int64
-anklecircumference                6068 non-null int64
-axillaheight                      6068 non-null int64
-balloffootcircumference           6068 non-null int64
-balloffootlength                  6068 non-null int64
-biacromialbreadth                 6068 non-null int64
-bicepscircumferenceflexed         6068 non-null int64
-bicristalbreadth                  6068 non-null int64
-bideltoidbreadth                  6068 non-null int64
-bimalleolarbreadth                6068 non-null int64
-bitragionchinarc                  6068 non-null int64
-bitragionsubmandibulararc         6068 non-null int64
-bizygomaticbreadth                6068 non-null int64
-buttockcircumference              6068 non-null int64
-buttockdepth                      6068 non-null int64
-buttockheight                     6068 non-null int64
-buttockkneelength                 6068 non-null int64
-buttockpopliteallength            6068 non-null int64
-calfcircumference                 6068 non-null int64
-cervicaleheight                   6068 non-null int64
-chestbreadth                      6068 non-null int64
-chestcircumference                6068 non-null int64
-chestdepth                        6068 non-null int64
-chestheight                       6068 non-null int64
-crotchheight                      6068 non-null int64
-crotchlengthomphalion             6068 non-null int64
-crotchlengthposterioromphalion    6068 non-null int64
-earbreadth                        6068 non-null int64
-earlength                         6068 non-null int64
-earprotrusion                     6068 non-null int64
-elbowrestheight                   6068 non-null int64
-eyeheightsitting                  6068 non-null int64
-footbreadthhorizontal             6068 non-null int64
-footlength                        6068 non-null int64
-forearmcenterofgriplength         6068 non-null int64
-forearmcircumferenceflexed        6068 non-null int64
-forearmforearmbreadth             6068 non-null int64
-forearmhandlength                 6068 non-null int64
-functionalleglength               6068 non-null int64
-handbreadth                       6068 non-null int64
-handcircumference                 6068 non-null int64
-handlength                        6068 non-null int64
-headbreadth                       6068 non-null int64
-headcircumference                 6068 non-null int64
-headlength                        6068 non-null int64
-heelanklecircumference            6068 non-null int64
-heelbreadth                       6068 non-null int64
-hipbreadth                        6068 non-null int64
-hipbreadthsitting                 6068 non-null int64
-iliocristaleheight                6068 non-null int64
-interpupillarybreadth             6068 non-null int64
-interscyei                        6068 non-null int64
-interscyeii                       6068 non-null int64
-kneeheightmidpatella              6068 non-null int64
-kneeheightsitting                 6068 non-null int64
-lateralfemoralepicondyleheight    6068 non-null int64
-lateralmalleolusheight            6068 non-null int64
-lowerthighcircumference           6068 non-null int64
-mentonsellionlength               6068 non-null int64
-neckcircumference                 6068 non-null int64
-neckcircumferencebase             6068 non-null int64
-overheadfingertipreachsitting     6068 non-null int64
-palmlength                        6068 non-null int64
-poplitealheight                   6068 non-null int64
-radialestylionlength              6068 non-null int64
-shouldercircumference             6068 non-null int64
-shoulderelbowlength               6068 non-null int64
-shoulderlength                    6068 non-null int64
-sittingheight                     6068 non-null int64
-sleevelengthspinewrist            6068 non-null int64
-sleeveoutseam                     6068 non-null int64
-span                              6068 non-null int64
-suprasternaleheight               6068 non-null int64
-tenthribheight                    6068 non-null int64
-thighcircumference                6068 non-null int64
-thighclearance                    6068 non-null int64
-thumbtipreach                     6068 non-null int64
-tibialheight                      6068 non-null int64
-tragiontopofhead                  6068 non-null int64
-trochanterionheight               6068 non-null int64
-verticaltrunkcircumferenceusa     6068 non-null int64
-waistbacklength                   6068 non-null int64
-waistbreadth                      6068 non-null int64
-waistcircumference                6068 non-null int64
-waistdepth                        6068 non-null int64
-waistfrontlengthsitting           6068 non-null int64
-waistheightomphalion              6068 non-null int64
-wristcircumference                6068 non-null int64
-wristheight                       6068 non-null int64
-weight_kg                         6068 non-null float64
-stature_m                         6068 non-null float64
-BMI                               6068 non-null float64
-gender                            6068 non-null int64
-dtypes: float64(3), int64(92)
-memory usage: 4.4 MB
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13447,7 +13330,7 @@ memory usage: 4.4 MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
@@ -13537,10 +13420,42 @@ memory usage: 4.4 MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert --to html 3_Screening_for_model_accuracy.ipynb
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert --to html 4_Feature_extraction.ipynb
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[NbConvertApp] Converting notebook 4_Feature_extraction.ipynb to html
+[NbConvertApp] Writing 296579 bytes to 4_Feature_extraction.html
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>../gitbsh &gt; /dev/null <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
 </pre></div>
 
     </div>
@@ -13553,7 +13468,7 @@ memory usage: 4.4 MB
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>../gitbsh &gt; /dev/null <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
